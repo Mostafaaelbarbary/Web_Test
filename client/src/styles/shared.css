@@ -1,0 +1,51 @@
+/* =========================================================
+   GLOBAL RESET & BRAND VARIABLES
+   Shared across all pages (Landing, Form, Dashboard, Login).
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --paper: #f4f1ea;
+  --paper-deep: #ece7db;
+  --ink: #171512;
+  --ink-soft: #5c584f;
+  --green: #0b3d2a;
+  --green-deep: #062a1c;
+  --green-tint: rgba(11, 61, 42, 0.06);
+  --brass: #b08d57;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Public Sans", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+/* Shared button used across Landing, Form, Dashboard, Login */
+.btn-primary {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--green);
+  color: var(--paper);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--green-deep);
+  transform: translateY(-2px);
+}
